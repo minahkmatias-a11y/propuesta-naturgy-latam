@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+.refbtn{display:none!important}
+</style>
+<title>Video Apertura LATAM 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,800&display=swap">
+<style>
+  :root{
+    --azul:#004571;
+    --celeste:#73caeb;
+    --naranja:#e57200;
+
+    --bg:#ffffff;
+    --grid:rgba(115,202,235,.28);
+    --surface:#ffffff;
+    --surface-2:#eef7fc;
+    --ink:#0b1013;
+    --ink-2:#37474f;
+    --ink-3:#6c8492;
+    --line:#cde4f1;
+    --line-strong:#9fcde5;
+
+    --brand:#004571;
+    --accent:#e57200;
+    --highlight:#1b86bd;
+
+    --block-bg:#004571;
+    --block-ink:#ffffff;
+    --block-ink-2:#bcdcee;
+
+    --ours-bg:#0b1013;
+    --ours-surface:#161e24;
+    --ours-line:#27343c;
+    --ours-ink:#ffffff;
+    --ours-ink-2:#bfccd3;
+    --ours-ink-3:#83959f;
+
+    --focus:#e57200;
+    --f:"Figtree","Helvetica Neue",Arial,sans-serif;
+    --r:10px;
+    --maxw:940px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#04121c;
+      --grid:rgba(115,202,235,.11);
+      --surface:#07293f;
+      --surface-2:#0a3a5a;
+      --ink:#f4fbfe;
+      --ink-2:#bcdcec;
+      --ink-3:#7ea9c2;
+      --line:#11486d;
+      --line-strong:#1d6791;
+      --brand:#73caeb;
+      --accent:#ff9026;
+      --highlight:#73caeb;
+      --block-bg:#0a3a5a;
+      --block-ink:#ffffff;
+      --block-ink-2:#a9cfe3;
+      --ours-bg:#000000;
+      --ours-surface:#0e161b;
+      --ours-line:#22303a;
+      --focus:#ff9026;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#04121c;
+    --grid:rgba(115,202,235,.11);
+    --surface:#07293f;
+    --surface-2:#0a3a5a;
+    --ink:#f4fbfe;
+    --ink-2:#bcdcec;
+    --ink-3:#7ea9c2;
+    --line:#11486d;
+    --line-strong:#1d6791;
+    --brand:#73caeb;
+    --accent:#ff9026;
+    --highlight:#73caeb;
+    --block-bg:#0a3a5a;
+    --block-ink:#ffffff;
+    --block-ink-2:#a9cfe3;
+    --ours-bg:#000000;
+    --ours-surface:#0e161b;
+    --ours-line:#22303a;
+    --focus:#ff9026;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background-color:var(--bg);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:30px 30px;
+    color:var(--ink);
+    font-family:var(--f);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  :focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+
+  /* ---------- header ---------- */
+  .top{
+    position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;
+    background:var(--surface);border-bottom:1px solid var(--line);
+  }
+  .top-in{max-width:var(--maxw);margin:0 auto;padding:13px 20px 0}
+  .brandline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:11px}
+  .mark{font-weight:800;font-size:15px;letter-spacing:.02em;color:var(--brand)}
+  .mark span{color:var(--accent)}
+  .breadcrumb{
+    font-size:13px;font-weight:300;color:var(--ink-2);
+  }
+  .refbtn{
+    margin-left:auto;appearance:none;cursor:pointer;
+    background:transparent;border:1px solid var(--line-strong);color:var(--ink-2);
+    border-radius:20px;padding:3px 12px;
+    font-family:var(--f);font-size:12.5px;font-weight:400;
+  }
+  .refbtn:hover{color:var(--ink)}
+  .refbtn[aria-pressed="true"]{background:var(--naranja);border-color:var(--naranja);color:#fff}
+
+  nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:0 20px}
+  nav.tabs::-webkit-scrollbar{display:none}
+  .tab{
+    appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+    padding:8px 12px 10px;font-family:var(--f);font-size:14.5px;font-weight:600;
+    color:var(--ink-2);white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:6px;
+  }
+  .tab:hover{color:var(--ink)}
+  .tab[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--accent)}
+  .tab .wip{width:5px;height:5px;border-radius:50%;background:var(--line-strong);flex:none}
+
+  /* ---------- modo revisión ---------- */
+  body.refs [data-ref]{position:relative;outline:1px dashed rgba(229,114,0,.5);outline-offset:4px}
+  body.refs [data-ref]::after{
+    content:attr(data-ref);
+    position:absolute;z-index:6;top:-10px;left:-10px;
+    background:var(--naranja);color:#fff;
+    font-family:var(--f);font-size:10px;font-weight:800;letter-spacing:.06em;
+    padding:1px 6px;border-radius:3px;line-height:1.6;pointer-events:none;
+  }
+  body.refs [data-ref].inset::after{top:5px;left:5px}
+  #guia{margin-top:44px}
+
+  /* ---------- layout ---------- */
+  main{max-width:var(--maxw);margin:0 auto;padding-inline:20px;padding-block:28px 72px}
+  section[role="tabpanel"]{animation:fade .18s ease-out}
+  @keyframes fade{from{opacity:.45}to{opacity:1}}
+  @media (prefers-reduced-motion: reduce){section[role="tabpanel"]{animation:none}}
+  .stack{display:flex;flex-direction:column;gap:28px}
+
+  h1{font-weight:800;font-size:clamp(26px,4.8vw,36px);line-height:1.1;letter-spacing:-.025em;margin:0;text-wrap:balance}
+  h2{
+    font-weight:300;font-size:17px;letter-spacing:-.005em;line-height:1.3;
+    color:var(--brand);margin:0 0 14px;
+  }
+  h3{font-weight:800;font-size:18px;line-height:1.25;letter-spacing:-.015em;margin:0 0 5px}
+  p{margin:0 0 11px;max-width:64ch}
+  p:last-child{margin-bottom:0}
+  .lede{font-size:18px;color:var(--ink-2);max-width:58ch}
+  .sub{color:var(--ink-2)}
+  strong{font-weight:800;color:inherit}
+  em{font-style:italic}
+
+  .eyebrow{
+    font-size:14px;font-weight:300;color:var(--accent);margin:0 0 12px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+    padding:28px 26px;display:grid;grid-template-columns:1fr 180px;gap:26px;align-items:center;
+  }
+  .hero .art{
+    width:100%;height:100%;max-height:270px;object-fit:cover;object-position:top center;
+    border-radius:8px;border:1px solid var(--line);background:#fff;display:block;
+  }
+  @media (max-width:620px){
+    .hero{grid-template-columns:1fr;gap:20px}
+    .hero .art{max-height:150px;object-position:center}
+  }
+  .lockup{display:flex;flex-direction:column;line-height:1}
+  .lockup .l1{font-size:clamp(15px,2.6vw,19px);font-weight:500;color:var(--brand)}
+  .lockup .l2{font-size:clamp(40px,8.4vw,62px);font-weight:800;color:var(--highlight);letter-spacing:-.03em;margin-top:2px}
+  .lockup .l3{font-size:clamp(19px,3.4vw,26px);font-weight:800;letter-spacing:-.015em;margin-top:2px}
+  .lockup .l3 .lat{color:var(--accent)}
+  .lockup .l3 .yr{color:var(--brand)}
+  .lockup .l4{font-size:clamp(15px,2.6vw,18px);font-weight:400;font-style:italic;color:var(--brand);margin-top:13px;line-height:1.25}
+
+  /* ---------- pieces ---------- */
+  .facts{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  }
+  .fact{background:var(--surface);padding:14px 16px}
+  .fact dt{font-size:13.5px;font-weight:300;color:var(--ink-2);margin-bottom:2px}
+  .fact dd{margin:0;font-weight:800;font-size:18px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--brand)}
+
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:22px}
+  .grid2 > div{border-top:3px solid var(--celeste);padding-top:13px}
+
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+  .panel.quiet{background:var(--surface-2);border-color:transparent}
+  .block{background:var(--block-bg);color:var(--block-ink);border-radius:var(--r);padding:22px}
+  .block h2{color:var(--celeste)}
+  .block p{color:var(--block-ink-2)}
+  .block strong{color:var(--block-ink)}
+  .block ul.clean li{color:var(--block-ink-2)}
+  .block ul.clean li::before{background:var(--naranja)}
+
+  .statement{background:var(--block-bg);color:var(--block-ink);border-radius:var(--r);padding:30px 26px}
+  .statement .big{
+    font-size:clamp(25px,4.8vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.03em;
+    margin:0;max-width:20ch;color:var(--block-ink);
+  }
+  .statement .big em{color:var(--celeste);font-style:normal}
+
+  ul.clean{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  ul.clean li{display:flex;gap:11px;align-items:flex-start;max-width:64ch}
+  ul.clean li::before{content:"";flex:none;width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--highlight)}
+  ul.no li::before{border-radius:0;height:2px;width:12px;margin-top:12px;background:var(--naranja)}
+
+  .kv{display:flex;flex-direction:column}
+  .kv div{display:flex;gap:16px;padding:11px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+  .kv div:last-child{border-bottom:1px solid var(--line)}
+  .kv dt{flex:0 0 130px;font-size:14px;font-weight:300;color:var(--ink-2);padding-top:2px}
+  .kv dd{margin:0;flex:1 1 240px}
+
+  /* ---------- ruta ---------- */
+  .ruta{width:100%;height:auto;display:block;max-width:100%}
+  .ruta .edge{stroke:var(--brand);stroke-width:22;fill:none;stroke-linecap:round}
+  .ruta .fill{stroke:var(--surface);stroke-width:18.5;fill:none;stroke-linecap:round}
+  .ruta .dash{stroke:var(--celeste);stroke-width:2.4;fill:none;stroke-dasharray:10 10}
+  .ruta .node{fill:var(--surface);stroke:var(--brand);stroke-width:2}
+  .ruta .now{fill:var(--naranja)}
+  .ruta .yr{font-family:Figtree,sans-serif;font-size:13px;font-weight:300;fill:var(--ink-2)}
+  .ruta .yr.on{fill:var(--naranja);font-size:14px;font-weight:500}
+  .ruta .cap{font-family:Figtree,sans-serif;font-size:13.5px;font-weight:300;fill:var(--ink-2)}
+  .ruta .here{font-family:Figtree,sans-serif;font-size:15px;font-weight:800;fill:var(--naranja)}
+
+  /* ---------- timeline ---------- */
+  .tl{display:flex;flex-direction:column}
+  .tl .row{display:grid;grid-template-columns:78px 18px 1fr;gap:14px;align-items:start}
+  .tl .date{
+    font-size:14px;font-weight:300;color:var(--ink-2);
+    padding-top:12px;font-variant-numeric:tabular-nums;
+  }
+  .tl .row.key .date{color:var(--ink);font-weight:500}
+  .tl .rail{position:relative;justify-self:center;width:18px;align-self:stretch}
+  .tl .rail::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--line-strong);transform:translateX(-50%)}
+  .tl .row:first-child .rail::before{top:18px}
+  .tl .row:last-child .rail::before{bottom:calc(100% - 18px)}
+  .tl .dot{
+    position:absolute;left:50%;top:15px;transform:translate(-50%,-50%);
+    width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--line-strong);
+  }
+  .tl .row.key .dot{background:var(--naranja);border-color:var(--naranja);width:13px;height:13px}
+  .tl .row.pend .dot{border-style:dashed;border-color:var(--naranja);background:var(--bg)}
+  .tl .body{padding:8px 0 18px}
+  .tl .body h3{font-size:16.5px;margin-bottom:2px}
+  .tl .body p{font-size:14.5px;color:var(--ink-2);margin:0}
+  .tl .row.key .body h3{color:var(--brand)}
+
+  .pill{
+    display:inline-block;font-size:12.5px;font-weight:400;
+    padding:1px 9px;border-radius:3px;background:var(--naranja);color:#fff;vertical-align:2px;margin-left:8px;
+  }
+
+  /* ---------- swatches ---------- */
+  .sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:12px}
+  .sw .chip{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+  .sw .chip .fill-c{height:64px}
+  .sw .chip .meta{padding:9px 12px}
+  .sw .chip .name{font-weight:800;font-size:14px}
+  .sw .chip .hex{font-size:11.5px;font-weight:500;color:var(--ink-3);letter-spacing:.04em}
+
+  /* ---------- placeholder ---------- */
+  .todo{border:2px dashed var(--line-strong);border-radius:var(--r);padding:20px}
+  .todo h3{color:var(--ink-2)}
+  .todo ul.clean li::before{background:var(--line-strong)}
+  .todo ul.clean li{color:var(--ink-2);font-size:15px}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r)}
+  table{border-collapse:collapse;width:100%;min-width:560px;background:var(--surface)}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+  th{font-size:13.5px;color:var(--block-ink);font-weight:300;background:var(--block-bg)}
+  tr:last-child td{border-bottom:0}
+  td.tc{font-size:13px;font-weight:600;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+  td.empty{color:var(--ink-3);font-style:italic}
+
+  .credit{font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px}
+  .credit strong{color:var(--brand);font-weight:800;letter-spacing:.02em}
+
+  /* ---------- cómo seguimos ---------- */
+  .steps{display:grid;grid-template-columns:1fr 56px 1.4fr;gap:12px;align-items:stretch}
+  .step{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
+  .step.now{border:2px solid var(--naranja)}
+  .step .lbl{display:block;font-size:13.5px;font-weight:300;color:var(--accent);margin-bottom:2px}
+  .step strong{display:block;font-size:17px;font-weight:800;color:var(--brand);line-height:1.3}
+  .step-go{align-self:center;height:2px;position:relative;
+    background:repeating-linear-gradient(90deg,var(--highlight) 0 8px,transparent 8px 14px)}
+  .step-go::after{content:"";position:absolute;right:-3px;top:50%;transform:translateY(-50%);
+    border-left:10px solid var(--highlight);border-top:6px solid transparent;border-bottom:6px solid transparent}
+  @media (max-width:600px){
+    .steps{grid-template-columns:1fr;gap:10px}
+    .step-go{justify-self:center;width:2px;height:30px;
+      background:repeating-linear-gradient(180deg,var(--highlight) 0 7px,transparent 7px 12px)}
+    .step-go::after{right:auto;left:50%;top:auto;bottom:-3px;transform:translateX(-50%);
+      border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid var(--highlight);border-bottom:0}
+  }
+
+  /* ---------- presupuesto ---------- */
+  .pieces{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .piece{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+  .piece.main{border:2px solid var(--naranja)}
+  .piece h3{font-size:17px;margin:0}
+  .piece .dur{font-weight:800;font-size:26px;letter-spacing:-.02em;color:var(--brand);font-variant-numeric:tabular-nums;line-height:1.1;margin:5px 0 7px}
+  .piece p{font-size:14.5px;color:var(--ink-2);margin:0}
+
+  .flow3{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;gap:10px;align-items:stretch}
+  .flow3 .step .lbl{font-size:15px;font-weight:600;margin-bottom:8px}
+  ul.mini{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+  ul.mini li{font-size:15px;color:var(--ink);line-height:1.35}
+  @media (max-width:600px){.flow3{grid-template-columns:1fr}}
+
+  .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+  .team div{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 15px;font-weight:500;color:var(--ink)}
+
+  .block .price{font-weight:800;font-size:clamp(34px,6vw,50px);letter-spacing:-.03em;line-height:1.05;color:var(--block-ink);margin:0 0 12px;font-variant-numeric:tabular-nums}
+  .block .price span{font-weight:300;font-size:.48em;letter-spacing:0;color:var(--celeste)}
+
+  /* ---------- propuesta · la parte nuestra ---------- */
+  .tab .own{width:6px;height:6px;border-radius:50%;background:var(--naranja);flex:none}
+
+  .ours{background:var(--ours-bg);color:var(--ours-ink);border-radius:14px;padding:34px 28px 40px}
+  @media (max-width:560px){.ours{padding:26px 18px 32px;border-radius:12px}}
+  .ours .sec + .sec{border-top:1px solid var(--ours-line);padding-top:28px}
+  .ours h2{color:var(--celeste)}
+  .ours h3{color:var(--ours-ink)}
+  .ours p{color:var(--ours-ink-2)}
+  .ours strong{color:var(--ours-ink)}
+  .ours .eyebrow{color:var(--naranja)}
+  .ours a{color:var(--celeste);text-underline-offset:3px}
+  .ours a.soft{color:inherit;text-decoration:underline dotted;text-decoration-color:var(--ours-ink-3);text-underline-offset:5px}
+  .ours a.soft:hover{color:var(--celeste);text-decoration-color:var(--celeste)}
+  .ours a.soft:hover strong{color:inherit}
+
+  .p-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:22px}
+  .p-title{font-weight:800;font-size:clamp(34px,7vw,58px);line-height:1.02;letter-spacing:-.035em;color:#fff;margin:0;text-wrap:balance}
+  .compas{flex:none;width:clamp(44px,7vw,60px);height:auto;color:var(--ours-ink-3)}
+  .compas line{stroke:currentColor;stroke-width:1.2}
+  .compas text{font-family:Figtree,sans-serif;font-weight:800;font-size:25px;fill:var(--naranja)}
+
+  .ours .pull{font-weight:800;font-size:clamp(22px,3.8vw,30px);line-height:1.16;letter-spacing:-.025em;color:#fff;max-width:32ch;margin:18px 0 10px}
+  .pull em{font-style:normal;color:var(--celeste)}
+
+  .arc{display:grid;grid-template-columns:1fr 64px 1.35fr;gap:14px;align-items:stretch}
+  .arc .card{background:var(--ours-surface);border:1px solid var(--ours-line);border-radius:10px;padding:16px 18px}
+  .arc .lbl{display:block;font-size:13.5px;font-weight:300;color:var(--naranja);margin-bottom:2px}
+  .arc .card strong{display:block;font-size:21px;font-weight:800;letter-spacing:-.02em;color:#fff;line-height:1.2}
+  .arc .s{display:block;font-size:14.5px;color:var(--ours-ink-2);margin-top:3px}
+  .arc .go{align-self:center;height:2px;position:relative;
+    background:repeating-linear-gradient(90deg,var(--celeste) 0 8px,transparent 8px 14px)}
+  .arc .go::after{content:"";position:absolute;right:-3px;top:50%;transform:translateY(-50%);
+    border-left:10px solid var(--celeste);border-top:6px solid transparent;border-bottom:6px solid transparent}
+  .trio{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .trio span{font-size:13px;font-weight:500;border:1px solid var(--celeste);color:var(--celeste);border-radius:20px;padding:2px 10px}
+  @media (max-width:600px){
+    .arc{grid-template-columns:1fr;gap:10px}
+    .arc .go{justify-self:center;width:2px;height:34px;
+      background:repeating-linear-gradient(180deg,var(--celeste) 0 7px,transparent 7px 12px)}
+    .arc .go::after{right:auto;left:50%;top:auto;bottom:-3px;transform:translateX(-50%);
+      border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid var(--celeste);border-bottom:0}
+  }
+
+  .tlx{margin:6px 0 10px}
+  .tlx .row2{display:grid;grid-template-columns:112px 1fr;gap:12px;align-items:center;padding:4px 0}
+  .tlx .ticks{position:relative;height:18px;font-size:12px;font-weight:300;color:var(--ours-ink-3);font-variant-numeric:tabular-nums}
+  .tlx .ticks span{position:absolute;top:0;transform:translateX(-50%)}
+  .tlx .ticks span:first-child{transform:none}
+  .tlx .ticks span:last-child{transform:translateX(-100%)}
+  .tlx .name{font-size:13.5px;color:var(--ours-ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tlx .name b{font-weight:800;color:var(--ours-ink-3);margin-right:6px;font-size:11.5px}
+  .tlx .lane{position:relative;height:22px;background:var(--ours-surface);border-radius:4px;overflow:hidden}
+  .tlx .seg{position:absolute;top:3px;bottom:3px;border-radius:3px}
+  .tlx .v1 .seg{background:var(--celeste)}
+  .tlx .v1 .seg.ia{background:repeating-linear-gradient(135deg,var(--celeste) 0 3px,#ffffff 3px 6px)}
+  .tlx .v2 .seg{background:#2b7fb5}
+  .tlx .v3 .seg{background:var(--naranja)}
+  .tlx .a1 .seg{background:#e6edf1}
+  .tlx .a2 .seg{background:linear-gradient(90deg,rgba(115,202,235,.12),rgba(115,202,235,.95))}
+  .ours .tlx-note{font-size:13px;color:var(--ours-ink-3);margin-top:8px}
+  .tlx-note i{display:inline-block;width:18px;height:9px;vertical-align:0;margin-right:5px;border-radius:2px;
+    background:repeating-linear-gradient(135deg,var(--celeste) 0 3px,#ffffff 3px 6px)}
+
+  .cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:20px}
+  .ours ul.clean li{color:var(--ours-ink-2)}
+  .ours ul.clean li::before{background:var(--celeste)}
+
+  .trip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .trip > div{background:var(--ours-surface);border:1px solid var(--ours-line);border-radius:10px;padding:17px 18px}
+  .trip h3{font-size:17px;margin-bottom:6px}
+  .trip p{font-size:15px}
+
+  .cv{width:100%;height:auto;display:block;max-width:100%;margin:6px 0 14px}
+  .cv .axis{stroke:var(--ours-line);stroke-width:1}
+  .cv .curve{stroke:var(--celeste);stroke-width:3;fill:none;stroke-linecap:round}
+  .cv .susp{stroke:var(--celeste);stroke-width:3;fill:none;stroke-dasharray:2 7;stroke-linecap:round}
+  .cv .peak{fill:var(--naranja)}
+  .cv .placa{fill:var(--naranja)}
+  .cv text{font-family:Figtree,sans-serif;font-size:13px;font-weight:300;fill:var(--ours-ink-2)}
+  .cv text.pk{fill:var(--naranja);font-weight:500}
+  .cv text.t{fill:var(--ours-ink-3);font-size:12px}
+
+  .letra{border-left:3px solid var(--naranja);padding:4px 0 4px 22px;display:flex;flex-direction:column;gap:18px;margin-top:16px}
+  .ours .letra p{font-size:clamp(17px,2.3vw,19.5px);font-weight:300;line-height:1.6;color:#fff;margin:0;max-width:56ch}
+
+  /* ---------- referencias ---------- */
+  .vid{position:relative;display:block;border-radius:10px;overflow:hidden;border:1px solid var(--ours-line);background:#000}
+  .vid img{display:block;width:100%;height:auto;transition:transform .35s ease}
+  .vid:hover img{transform:scale(1.02)}
+  @media (prefers-reduced-motion: reduce){.vid img{transition:none}.vid:hover img{transform:none}}
+  .vid .play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;
+    border-radius:50%;background:var(--naranja);box-shadow:0 6px 24px rgba(0,0,0,.4)}
+  .vid .play::after{content:"";position:absolute;left:25px;top:20px;
+    border-left:19px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+  .vid-t{margin-top:16px}
+
+  .mix{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch;margin-top:14px}
+  .mcard{background:var(--ours-surface);border:1px solid var(--ours-line);border-radius:10px;padding:16px 17px}
+  .mcard .lbl{display:block;font-size:13.5px;font-weight:300;color:var(--naranja);margin-bottom:2px}
+  .mcard strong{display:block;font-size:18px;font-weight:800;letter-spacing:-.015em;color:#fff;line-height:1.25}
+  .mcard .s{display:block;font-size:14px;color:var(--ours-ink-3);margin-top:4px}
+  .plus{align-self:center;justify-self:center;color:var(--naranja);font-weight:800;font-size:26px;line-height:1}
+  @media (max-width:640px){.mix{grid-template-columns:1fr}}
+
+  .voz{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;align-items:center}
+  .voz .play{width:52px;height:52px;margin:-26px 0 0 -26px}
+  .voz .play::after{left:20px;top:15px;border-left-width:16px;border-top-width:11px;border-bottom-width:11px}
+  @media (max-width:600px){.voz{grid-template-columns:1fr;gap:14px}}
+
+  /* ---------- guía tipográfica ---------- */
+  .guia-in{background:var(--surface);border:2px solid var(--naranja);border-radius:var(--r);padding:22px}
+  .guia-in > h2{color:var(--naranja)}
+  .trow{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line);align-items:start}
+  .trow:first-of-type{border-top:0}
+  .tcode{
+    font-size:11px;font-weight:800;letter-spacing:.08em;color:#fff;background:var(--naranja);
+    border-radius:3px;padding:2px 0;text-align:center;
+  }
+  .tdesc{font-size:12.5px;color:var(--ink-3);margin:4px 0 0;letter-spacing:.02em}
+  .s-t1{font-weight:800;font-size:30px;line-height:1.1;letter-spacing:-.025em;color:var(--ink)}
+  .s-t2{font-weight:800;font-size:38px;line-height:1;letter-spacing:-.03em;color:var(--highlight)}
+  .s-t3{font-weight:300;font-size:17px;color:var(--brand)}
+  .s-t4{font-weight:300;font-size:14px;color:var(--accent)}
+  .s-t5{font-weight:800;font-size:18px;letter-spacing:-.015em;color:var(--ink)}
+  .s-t6{font-size:16px;color:var(--ink)}
+  .s-t7{font-size:18px;color:var(--ink-2)}
+  .s-t8{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--brand)}
+  .s-t9{font-size:14px;font-weight:300;color:var(--ink-2)}
+  .s-t10{font-weight:800;font-size:28px;line-height:1.12;letter-spacing:-.03em;color:var(--brand)}
+  .s-t11{font-size:13px;font-weight:300;color:var(--ink-2)}
+  .s-t12{font-size:15px;font-style:italic;color:var(--brand)}
+
+  footer{
+    max-width:var(--maxw);margin:0 auto;padding:0 20px 40px;color:var(--ink-2);
+    font-size:13px;font-weight:300;
+  }
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="top-in">
+    <div class="brandline">
+      <span class="mark" data-ref="H1">MANDA<span>.</span></span>
+      <span class="breadcrumb" data-ref="H2">Naturgy · Encuentro LATAM 2026 · Propuesta v0.8</span>
+      <button class="refbtn" id="refbtn" aria-pressed="false">Modo revisión</button>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Secciones de la propuesta" data-ref="H3">
+      <button class="tab" role="tab" id="t-pres" aria-controls="p-pres" aria-selected="true">Presentación</button>
+      <button class="tab" role="tab" id="t-obj" aria-controls="p-obj" aria-selected="false" hidden>Objetivo</button>
+      <button class="tab" role="tab" id="t-prop" aria-controls="p-prop" aria-selected="false"><span class="own"></span>Propuesta</button>
+      <button class="tab" role="tab" id="t-guion" aria-controls="p-guion" aria-selected="false" hidden>Guión <span class="wip"></span></button>
+      <button class="tab" role="tab" id="t-ref" aria-controls="p-ref" aria-selected="false"><span class="own"></span>Referencias</button>
+      <button class="tab" role="tab" id="t-crono" aria-controls="p-crono" aria-selected="false">Cronograma</button>
+      <button class="tab" role="tab" id="t-pres2" aria-controls="p-budget" aria-selected="false">Presupuesto</button>
+      <button class="tab" role="tab" id="t-est" aria-controls="p-est" aria-selected="false" hidden>Estética <span class="wip"></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PRESENTACIÓN ============ -->
+<section role="tabpanel" id="p-pres" aria-labelledby="t-pres" class="stack">
+
+  <div class="hero" data-ref="P1">
+    <div>
+      <p class="eyebrow" data-ref="P2">Video institucional de apertura</p>
+      <div class="lockup" data-ref="P3">
+        <span class="l1">Encuentro</span>
+        <span class="l2">Argentina</span>
+        <span class="l3"><span class="lat">Latam</span><span class="yr">2026</span></span>
+        <span class="l4">Una experiencia<br>que nos conecta</span>
+      </div>
+    </div>
+    <img class="art inset" data-ref="P4" src="ilustracion.webp" alt="Ilustración de línea del Encuentro LATAM 2026 con motivos de distintas provincias argentinas.">
+  </div>
+
+  <div data-ref="P5">
+    <dl class="facts">
+      <div class="fact"><dt>Pieza</dt><dd>Video apertura</dd></div>
+      <div class="fact"><dt>Duración</dt><dd>3:00 – 3:30</dd></div>
+      <div class="fact"><dt>Proyección</dt><dd>13/10 · Plenario</dd></div>
+    </dl>
+  </div>
+
+  <div class="grid2" data-ref="P6">
+    <div>
+      <h3>El encuentro no crea la energía: la reúne</h3>
+      <p class="sub">Una energía que recorre Latinoamérica todos los días, sostenida por personas y por una infraestructura de escala extraordinaria. En 2026 converge en Argentina.</p>
+    </div>
+    <div>
+      <h3>Argentina recibe, no exhibe</h3>
+      <p class="sub">El anfitrión comparte una experiencia que queda disponible para el resto de la región.</p>
+    </div>
+  </div>
+
+  <div class="block" data-ref="P7">
+    <h2>Qué no es esta pieza</h2>
+    <ul class="clean no">
+      <li>No es un video de resultados ni una memoria anual.</li>
+      <li>No es una pieza turística sobre Argentina.</li>
+      <li>No es un resumen de la integración de las tres compañías.</li>
+    </ul>
+  </div>
+
+  <p class="credit" data-ref="P8">Propuesta de <strong>MANDA</strong></p>
+
+</section>
+
+<!-- ============ OBJETIVO ============ -->
+<section role="tabpanel" id="p-obj" aria-labelledby="t-obj" class="stack" hidden>
+
+  <div class="statement" data-ref="O1">
+    <p class="eyebrow" style="color:var(--celeste)">Objetivo</p>
+    <p class="big">Que el encuentro no se lea como una reunión anual, sino como <em>el punto donde converge</em>.</p>
+  </div>
+
+  <div data-ref="O2">
+    <h2>Una energía que no se detiene</h2>
+    <svg class="ruta" viewBox="0 0 700 150" role="img" aria-label="El encuentro rota cada año por un país distinto de Latinoamérica. En 2026 llega a Argentina.">
+      <path class="edge" d="M 40 78 H 655"/>
+      <path class="fill" d="M 40 78 H 655"/>
+      <path class="dash" d="M 52 78 H 643"/>
+      <g>
+        <circle class="node" cx="105" cy="78" r="7"/>
+        <text class="yr" x="105" y="52" text-anchor="middle">2023</text>
+        <circle class="node" cx="212" cy="78" r="7"/>
+        <text class="yr" x="212" y="52" text-anchor="middle">2024</text>
+        <circle class="node" cx="319" cy="78" r="7"/>
+        <text class="yr" x="319" y="52" text-anchor="middle">2025</text>
+        <circle class="now" cx="430" cy="78" r="13"/>
+        <text class="yr on" x="430" y="48" text-anchor="middle">2026</text>
+        <text class="here" x="430" y="112" text-anchor="middle">Argentina</text>
+        <circle class="node" cx="545" cy="78" r="7"/>
+        <text class="yr" x="545" y="52" text-anchor="middle">2027</text>
+      </g>
+      <text class="cap" x="350" y="141" text-anchor="middle">cada año fluye a un país distinto · este año fluye acá</text>
+    </svg>
+  </div>
+
+  <div data-ref="O3">
+    <h2>Objetivos</h2>
+    <ul class="clean">
+      <li>Dar dimensión concreta a la escala de la infraestructura.</li>
+      <li>Poner en valor a las personas que la operan: nombre, cara y territorio.</li>
+      <li>Posicionar a Argentina como anfitrión que comparte una experiencia.</li>
+      <li>Conectar con el propósito y el claim sin enunciarlos.</li>
+    </ul>
+  </div>
+
+  <div class="panel" data-ref="O4">
+    <h2>Regla de marca</h2>
+    <p style="margin-bottom:14px">Ni el propósito ni el claim se dicen en la locución. Se resuelven <strong>una sola vez, escritos, en la placa final.</strong></p>
+    <dl class="kv">
+      <div><dt>Propósito</dt><dd>Facilitar tu relación con la energía, cada día</dd></div>
+      <div><dt>Claim</dt><dd>Cada día. Everyday.</dd></div>
+      <div><dt>Placa final</dt><dd>Encuentro LATAM 2026 | Argentina · Una experiencia que nos conecta · Cada día. Everyday.</dd></div>
+    </dl>
+  </div>
+
+</section>
+
+<!-- ============ PROPUESTA (nuestra) ============ -->
+<section role="tabpanel" id="p-prop" aria-labelledby="t-prop" class="stack ours" hidden>
+
+  <div class="sec" data-ref="PR1">
+    <div class="p-hero">
+      <div>
+        <p class="eyebrow">Nuestra propuesta</p>
+        <h1 class="p-title">Un video que suena a tango.</h1>
+      </div>
+      <svg class="compas" viewBox="0 0 56 64" aria-hidden="true">
+        <line x1="0" y1="10" x2="56" y2="10"/>
+        <line x1="0" y1="21" x2="56" y2="21"/>
+        <line x1="0" y1="32" x2="56" y2="32"/>
+        <line x1="0" y1="43" x2="56" y2="43"/>
+        <line x1="0" y1="54" x2="56" y2="54"/>
+        <text x="28" y="30" text-anchor="middle">2</text>
+        <text x="28" y="52" text-anchor="middle">4</text>
+      </svg>
+    </div>
+
+    <div data-ref="PR2">
+      <p>Alejandro Dolina, escritor, músico y conductor, dice que <a class="soft" href="https://www.youtube.com/watch?v=-gmJB9ONBKc&amp;t=660s" target="_blank" rel="noopener" title="Ver la entrevista, minuto 11">“Argentina suena a un <strong><em>tango</em></strong>”</a>.</p>
+      <p>No importa si está en 2/4 o en 4/4: cuando suena un tango, lo sabemos. Por el bandoneón o por la nostalgia de la letra, pero lo sabemos.</p>
+      <p>Eso buscamos. Que el video suene a tango sin que el texto sea un poema en verso.</p>
+      <p class="pull">No vamos a mostrar tango. <em>Vamos a contar como un tango.</em></p>
+      <p>Con lo mejor que tiene, que es evocar la historia vivida.</p>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="PR3">
+    <h2>De dónde partimos, adónde vamos</h2>
+    <div class="arc">
+      <div class="card">
+        <span class="lbl">Partimos</span>
+        <strong>La historia</strong>
+        <span class="s">Antes de Naturgy</span>
+      </div>
+      <div class="go" aria-hidden="true"></div>
+      <div class="card">
+        <span class="lbl">Volvemos</span>
+        <strong>El presente</strong>
+        <span class="s">Una sola empresa hecha de tres</span>
+        <div class="trio"><span>Naturgy NOA</span><span>Naturgy San Juan</span><span>Naturgy BAN</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="PR4">
+    <h2>Con qué</h2>
+    <p>La base es el registro que hicimos estos últimos cuatro años: los paisajes de cada región, su vida cotidiana y, sobre todo, los equipos de trabajo. Lo humano.</p>
+
+    <div class="tlx" role="img" aria-label="Esquema de capas del montaje: archivo, ilustraciones animadas, motion graphics, voz en off y música original a lo largo de tres minutos.">
+      <div class="row2">
+        <span></span>
+        <div class="ticks"><span style="left:0">0:00</span><span style="left:33.333%">1:00</span><span style="left:66.667%">2:00</span><span style="left:100%">3:00</span></div>
+      </div>
+      <div class="row2 v3">
+        <span class="name"><b>V3</b>Motion</span>
+        <div class="lane"><span class="seg" style="left:21%;width:3%"></span><span class="seg" style="left:44%;width:3%"></span><span class="seg" style="left:69%;width:3%"></span><span class="seg" style="left:94%;width:6%"></span></div>
+      </div>
+      <div class="row2 v2">
+        <span class="name"><b>V2</b>Ilustraciones</span>
+        <div class="lane"><span class="seg" style="left:0;width:8%"></span><span class="seg" style="left:32%;width:5%"></span><span class="seg" style="left:59%;width:5%"></span><span class="seg" style="left:86%;width:7%"></span></div>
+      </div>
+      <div class="row2 v1">
+        <span class="name"><b>V1</b>Archivo</span>
+        <div class="lane"><span class="seg" style="left:6%;width:10%"></span><span class="seg" style="left:16.5%;width:15%"></span><span class="seg" style="left:37.5%;width:13%"></span><span class="seg ia" style="left:51%;width:5%"></span><span class="seg" style="left:56.5%;width:16%"></span><span class="seg ia" style="left:73%;width:4%"></span><span class="seg" style="left:77.5%;width:8%"></span></div>
+      </div>
+      <div class="row2 a1">
+        <span class="name"><b>A1</b>Voz en off</span>
+        <div class="lane"><span class="seg" style="left:3%;width:17%"></span><span class="seg" style="left:24%;width:19%"></span><span class="seg" style="left:48%;width:19%"></span><span class="seg" style="left:72%;width:18%"></span></div>
+      </div>
+      <div class="row2 a2">
+        <span class="name"><b>A2</b>Música</span>
+        <div class="lane"><span class="seg" style="left:0;width:93%"></span></div>
+      </div>
+    </div>
+    <p class="tlx-note"><i></i>Planos hechos con IA, en momentos clave. Esquema ilustrativo, no es el montaje.</p>
+
+    <div class="cols2">
+      <div>
+        <h3>El archivo</h3>
+        <ul class="clean">
+          <li>Material de archivo histórico</li>
+          <li>Red eléctrica en San Juan</li>
+          <li>Inauguración de la oficina San Martín, Buenos Aires</li>
+          <li>Planta Peak Shaving, Buenos Aires</li>
+          <li>Documental en Paso de Jama</li>
+          <li>Registro de los últimos dos años: redes en San Pedro de Jujuy, oficinas de Salta, videos de seguridad en Tucumán</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Encima de eso sumamos</h3>
+        <p>Texto y música original, voz en off, animación de las ilustraciones del Encuentro y motion graphics para marcar conceptos y datos clave.</p>
+        <p>Es posible usar algunos planos hechos con IA para terminar de darle forma a la narración en momentos clave.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="PR5">
+    <div class="trip">
+      <div>
+        <h3>El texto</h3>
+        <p>Emotivo, coloquial. Con algún toque de humor, chiquito.</p>
+      </div>
+      <div>
+        <h3>La voz</h3>
+        <p>Rioplatense. En principio, de mujer.</p>
+      </div>
+      <div>
+        <h3>La música</h3>
+        <p>Original. El bandoneón mezclado con texturas de cada región: charango, guitarra cuyana.</p>
+        <p><a href="https://drive.google.com/file/d/1S4bUxrNvb8usZvx2JSAUXNueQ20QOkFP/view?usp=sharing" target="_blank" rel="noopener">Como en el video de fin de año 2025</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="PR6">
+    <h2>Cómo termina</h2>
+    <p>Con una bienvenida a los que vinieron de lejos. Queremos compartir nuestra historia y escuchar las suyas.</p>
+    <svg class="cv" viewBox="0 0 700 190" role="img" aria-label="Curva de intensidad: el video crece, llega a su punto más alto antes del final, baja a la bienvenida y queda en suspenso hasta la placa.">
+      <line class="axis" x1="30" y1="160" x2="670" y2="160"/>
+      <path class="curve" d="M30,150 C220,148 430,40 500,40 C560,40 570,70 600,72"/>
+      <path class="susp" d="M612,72 L646,72"/>
+      <circle class="peak" cx="500" cy="40" r="6"/>
+      <text class="pk" x="500" y="24" text-anchor="middle">punto más alto</text>
+      <text x="598" y="98" text-anchor="middle">bienvenida</text>
+      <rect class="placa" x="652" y="61" width="24" height="22" rx="3"/>
+      <text x="664" y="50" text-anchor="middle">placa</text>
+      <text class="t" x="30" y="182">0:00</text>
+      <text class="t" x="670" y="182" text-anchor="end">3:00</text>
+    </svg>
+    <p>El video va en crescendo, pero el punto más alto no es el final. La última línea deja puntos suspensivos: el video termina y el encuentro empieza. Después, la placa con el claim.</p>
+  </div>
+
+  <div class="sec" data-ref="PR7">
+    <h2>Un adelanto del texto</h2>
+    <p>La línea por la que iría el guion.</p>
+    <div class="letra">
+      <p>Cuando recibimos una visita, queremos que se sienta como en su casa. Festejaríamos el cumpleaños de alguno de ustedes como si fuera el del familiar más querido. Y somos especialistas en hacer lo mejor que podemos con los recursos y la energía que tenemos a mano.</p>
+      <p>Eso se reconoce desde cualquier país de Latinoamérica.</p>
+      <p>Esa energía hoy converge en Argentina.<br>
+        Donde en el arrabal profundo hay un tanque que guarda 45 millones de litros de invierno.<br>
+        Donde en un paso fronterizo, la estación reductora de gas más alta del mundo descansa sobre cimientos a más de 4.000 metros de altura.<br>
+        Y donde, en alguna región de buen vino, la energía de la cordillera se vuelve electricidad para todo el territorio.</p>
+      <p>Estamos en cada uno de esos procesos de la ciencia y la técnica humana. Imaginados con el ingenio de la cabeza y ejecutados con la habilidad de las manos.</p>
+      <p>Somos los artífices de nuestra propia identidad. Una identidad que se hace todos los días, con geografías, culturas y desafíos distintos, reunidos en una sola.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ GUIÓN ============ -->
+<section role="tabpanel" id="p-guion" aria-labelledby="t-guion" class="stack" hidden>
+  <div data-ref="G1">
+    <p class="eyebrow">Borrador</p>
+    <h1>Guión</h1>
+  </div>
+
+  <div data-ref="G2">
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>TC</th><th>Bloque</th><th>Imagen</th><th>Locución</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tc">00:00</td><td class="empty">—</td><td class="empty">a completar</td><td class="empty">a completar</td></tr>
+          <tr><td class="tc">—</td><td class="empty">—</td><td class="empty">a completar</td><td class="empty">a completar</td></tr>
+          <tr><td class="tc">—</td><td class="empty">—</td><td class="empty">a completar</td><td class="empty">a completar</td></tr>
+          <tr><td class="tc">03:1x</td><td>Placa final</td><td>Encuentro LATAM 2026 | Argentina</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="todo" data-ref="G3">
+    <h3>Reglas que el guión tiene que respetar</h3>
+    <ul class="clean">
+      <li>Máximo tres cifras sobreimpresas, y solo en el tramo de cierre.</li>
+      <li>Ningún plano de magnitud va solo: siempre lleva contrapunto humano.</li>
+      <li>Las tres compañías representadas: BAN, NOA y San Juan.</li>
+      <li>La última línea deja la pelota en la sala.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ REFERENCIAS ============ -->
+<section role="tabpanel" id="p-ref" aria-labelledby="t-ref" class="stack ours" hidden>
+
+  <div class="sec" data-ref="R1">
+    <p class="eyebrow">Nuestra propuesta</p>
+    <h1 class="p-title">Referencias</h1>
+  </div>
+
+  <div class="sec" data-ref="R2">
+    <h2>Tono e identidad</h2>
+    <a class="vid" href="https://drive.google.com/file/d/1S4bUxrNvb8usZvx2JSAUXNueQ20QOkFP/view?usp=sharing" target="_blank" rel="noopener" aria-label="Ver el video de fin de año 2025 de Naturgy">
+      <img src="ref-centro.webp" alt="Cuadro del video de fin de año 2025: la palabra Centro en collage con imágenes de la ciudad, un bandoneonista, un carpincho y una taza de café.">
+      <span class="play" aria-hidden="true"></span>
+    </a>
+    <h3 class="vid-t">Video de fin de año 2025 · Naturgy</h3>
+    <p>Referencia de tono, identidad, animaciones y música original.</p>
+  </div>
+
+  <div class="sec" data-ref="R3">
+    <h2>Estructura</h2>
+    <p>Un mix de tres videos que ya conocen.</p>
+    <div class="mix">
+      <div class="mcard">
+        <span class="lbl">San Juan</span>
+        <strong>El proceso de la energía</strong>
+        <span class="s">Último video de San Juan</span>
+      </div>
+      <div class="plus" aria-hidden="true">+</div>
+      <div class="mcard">
+        <span class="lbl">Paso de Jama</span>
+        <strong>La mirada documental</strong>
+        <span class="s">Documental</span>
+      </div>
+      <div class="plus" aria-hidden="true">+</div>
+      <div class="mcard">
+        <span class="lbl">Peak Shaving</span>
+        <strong>La pedagogía</strong>
+        <span class="s">Video de la planta</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="R4">
+    <h2>Locución</h2>
+    <div class="voz">
+      <a class="vid" href="https://www.youtube.com/watch?v=cOVNiNNwhC4" target="_blank" rel="noopener" aria-label="Escuchar a Fátima Soares en un comercial">
+        <img src="ref-voz.webp" alt="Cuadro de un comercial con la voz de Fátima Soares.">
+        <span class="play" aria-hidden="true"></span>
+      </a>
+      <div>
+        <h3>Fátima Soares</h3>
+        <p>Locutora de publicidad. Es nuestra sugerencia.</p>
+        <p>Si no convence, buscamos otras opciones en este estilo. También masculinas.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ CRONOGRAMA ============ -->
+<section role="tabpanel" id="p-crono" aria-labelledby="t-crono" class="stack" hidden>
+  <div data-ref="C1">
+    <p class="eyebrow">Producción</p>
+    <h1>Cronograma</h1>
+    <p class="lede" style="margin-top:12px">Dos fechas fijas: primer corte el 7, corte final el 12. El resto se calcula hacia atrás.</p>
+  </div>
+
+  <div data-ref="C2">
+    <h2>Cómo seguimos</h2>
+    <div class="steps">
+      <div class="step now">
+        <span class="lbl">Ahora</span>
+        <strong>Propuesta y presupuesto</strong>
+      </div>
+      <div class="step-go" aria-hidden="true"></div>
+      <div class="step">
+        <span class="lbl">Con el OK</span>
+        <strong>Desarrollo y guion, codo a codo con el equipo de comunicación</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl" data-ref="C3">
+    <div class="row pend">
+      <div class="date">A definir</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Entrega del archivo <span class="pill">Pendiente</span></h3>
+        <p>Es el arranque real. Sin el material, la fecha del primer corte no se sostiene.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="date">A definir</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Curaduría y guión</h3>
+        <p>Selección de planos con fecha y provincia. Cierre de guión y locución.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="date">A definir</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Montaje, locución y animación</h3>
+        <p>Grabación de la voz en off, armado del corte y animación.</p>
+      </div>
+    </div>
+    <div class="row key">
+      <div class="date">Mié 7/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Primer corte</h3>
+        <p>Entrega para revisión.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="date">8 – 9/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Devolución</h3>
+        <p>Incluye una instancia de devolución y correcciones.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="date">9 – 11/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Ajustes, color, mezcla y música</h3>
+        <p>Corrección de color unificada y mezcla final.</p>
+      </div>
+    </div>
+    <div class="row key">
+      <div class="date">Lun 12/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Corte final</h3>
+        <p>Master entregado en el formato de proyección de la sede.</p>
+      </div>
+    </div>
+    <div class="row key">
+      <div class="date">Mar 13/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Proyección</h3>
+        <p>Plenario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESUPUESTO ============ -->
+<section role="tabpanel" id="p-budget" aria-labelledby="t-pres2" class="stack" hidden>
+
+  <div data-ref="PS1">
+    <p class="eyebrow">Presupuesto</p>
+    <h1>Tres piezas, un mismo tango.</h1>
+    <p class="lede" style="margin-top:12px">El video abre el encuentro, el loop acompaña la fiesta y el resumen queda para después. Las tres salen del mismo material.</p>
+  </div>
+
+  <div data-ref="PS2">
+    <h2>Piezas</h2>
+    <div class="pieces">
+      <div class="piece main">
+        <h3>Video de apertura</h3>
+        <div class="dur">3:00 – 3:30</div>
+        <p>Proyección en el encuentro.</p>
+      </div>
+      <div class="piece">
+        <h3>Loop</h3>
+        <div class="dur">2:00 aprox.</div>
+        <p>Proyección en la fiesta. Archivo y animaciones.</p>
+      </div>
+      <div class="piece">
+        <h3>Resumen</h3>
+        <div class="dur">1:00 – 2:00</div>
+        <p>Versión corta del video de apertura, para después del evento.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-ref="PS3">
+    <h2>Qué incluye</h2>
+    <div class="flow3">
+      <div class="step">
+        <span class="lbl">Desarrollo</span>
+        <ul class="mini"><li>Concepto</li><li>Guion</li></ul>
+      </div>
+      <div class="step-go" aria-hidden="true"></div>
+      <div class="step">
+        <span class="lbl">Producción</span>
+        <ul class="mini"><li>Edición del material de archivo</li><li>Música original</li><li>Locución profesional</li><li>Animaciones</li></ul>
+      </div>
+      <div class="step-go" aria-hidden="true"></div>
+      <div class="step">
+        <span class="lbl">Posproducción</span>
+        <ul class="mini"><li>Montaje</li><li>Motion graphics</li><li>Corrección de color</li><li>Posproducción de sonido</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div data-ref="PS4">
+    <h2>Equipo</h2>
+    <div class="team">
+      <div>Productor y guionista</div>
+      <div>Director y guionista</div>
+      <div>Montajista y editor</div>
+      <div>Animadora</div>
+      <div>Productor musical y compositor</div>
+      <div>Locutor/a</div>
+    </div>
+  </div>
+
+  <div class="block" data-ref="PS5">
+    <h2>Total</h2>
+    <p class="price">$6.450.000 <span>+ IVA</span></p>
+    <p>Las tres piezas, con todo lo anterior incluido.</p>
+  </div>
+
+</section>
+
+<!-- ============ ESTÉTICA ============ -->
+<section role="tabpanel" id="p-est" aria-labelledby="t-est" class="stack" hidden>
+  <div data-ref="E1">
+    <p class="eyebrow">Borrador</p>
+    <h1>Propuesta estética</h1>
+  </div>
+
+  <div data-ref="E2">
+    <h2>Paleta</h2>
+    <div class="sw">
+      <div class="chip">
+        <div class="fill-c" style="background:#004571"></div>
+        <div class="meta"><div class="name">Azul</div><div class="hex">#004571</div></div>
+      </div>
+      <div class="chip">
+        <div class="fill-c" style="background:#73caeb"></div>
+        <div class="meta"><div class="name">Celeste</div><div class="hex">#73caeb</div></div>
+      </div>
+      <div class="chip">
+        <div class="fill-c" style="background:#e57200"></div>
+        <div class="meta"><div class="name">Naranja</div><div class="hex">#e57200</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel quiet" data-ref="E3">
+    <h2>Criterios definidos</h2>
+    <ul class="clean">
+      <li><strong>Una sola mirada sobre fuentes diversas.</strong> Corrección de color consistente sobre todo el material.</li>
+      <li><strong>No disimular.</strong> Ni escalar a la fuerza el material de baja resolución ni recortar para uniformar. La variación de textura es parte del mensaje.</li>
+      <li><strong>Ritmo parejo, sin sizzle reel.</strong></li>
+      <li><strong>Colores de marca integrados de forma sutil</strong>: uniformes, cascos, señalética.</li>
+      <li><strong>Continuidad con el evento.</strong> El trazo de la gráfica del Encuentro, en movimiento.</li>
+    </ul>
+  </div>
+
+  <div class="todo" data-ref="E4">
+    <h3>A cargar</h3>
+    <ul class="clean">
+      <li>Cómo animamos las ilustraciones: trazo que se dibuja, paso de ilustración a imagen real.</li>
+      <li>Frames de ejemplo: sobreimpresos, infografía, placa final.</li>
+      <li>Tipografías y texturas del manual del Encuentro.</li>
+      <li>Tratamiento de la voz y la música.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GUÍA TIPOGRÁFICA (solo modo revisión) ============ -->
+<aside id="guia" hidden>
+  <div class="guia-in">
+    <h2>Guía tipográfica · para pedir cambios</h2>
+    <p style="font-size:14.5px;color:var(--ink-2);margin-bottom:6px">Cada estilo de texto tiene un código. Decime “cambiá la T3” y sé exactamente cuál es. Los bloques llevan código de pestaña: P (Presentación), O (Objetivo), PR (Propuesta), PS (Presupuesto), G (Guión), R (Referencias), C (Cronograma), E (Estética), H (cabecera).</p>
+
+    <div class="trow"><span class="tcode">T1</span><div><div class="s-t1">Cronograma</div><p class="tdesc">Título de pestaña · 800 · −2.5% tracking</p></div></div>
+    <div class="trow"><span class="tcode">T2</span><div><div class="s-t2">Argentina</div><p class="tdesc">Lockup del evento · 800 · celeste</p></div></div>
+    <div class="trow"><span class="tcode">T3</span><div><div class="s-t3">Regla de marca</div><p class="tdesc">Rótulo de sección · light 300 · azul · 17px</p></div></div>
+    <div class="trow"><span class="tcode">T4</span><div><div class="s-t4">Video institucional de apertura</div><p class="tdesc">Volanta · light 300 · naranja · 14px</p></div></div>
+    <div class="trow"><span class="tcode">T5</span><div><div class="s-t5">Argentina recibe, no exhibe</div><p class="tdesc">Subtítulo de bloque · 800 · 18px</p></div></div>
+    <div class="trow"><span class="tcode">T6</span><div><div class="s-t6">El anfitrión comparte una experiencia que queda disponible.</div><p class="tdesc">Cuerpo de texto · 400 · 16px</p></div></div>
+    <div class="trow"><span class="tcode">T7</span><div><div class="s-t7">Dos fechas fijas: primer corte el 7, corte final el 12.</div><p class="tdesc">Bajada · 18px · gris azulado</p></div></div>
+    <div class="trow"><span class="tcode">T8</span><div><div class="s-t8">3:00 – 3:30</div><p class="tdesc">Dato del cuadro de ficha · 800 · azul</p></div></div>
+    <div class="trow"><span class="tcode">T9</span><div><div class="s-t9">Mié 7/10</div><p class="tdesc">Fecha del cronograma · light 300 · 14px</p></div></div>
+    <div class="trow"><span class="tcode">T10</span><div><div class="s-t10">El punto donde converge</div><p class="tdesc">Frase grande sobre bloque azul</p></div></div>
+    <div class="trow"><span class="tcode">T11</span><div><div class="s-t11">Naturgy · Encuentro LATAM 2026</div><p class="tdesc">Breadcrumb de cabecera · light 300 · 13px</p></div></div>
+    <div class="trow"><span class="tcode">T12</span><div><div class="s-t12">Una experiencia que nos conecta</div><p class="tdesc">Bajada del lockup · itálica azul</p></div></div>
+  </div>
+</aside>
+
+</main>
+
+<footer>MANDA · Propuesta en construcción · v0.8</footer>
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]')).filter(function(t){ return !t.hidden; });
+  var panels = tabs.map(function(t){ return document.getElementById(t.getAttribute('aria-controls')); });
+
+  function select(i, focus){
+    tabs.forEach(function(t, n){
+      var on = n === i;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      panels[n].hidden = !on;
+    });
+    if (focus) tabs[i].focus();
+    try { localStorage.setItem('latam26-tab', String(i)); } catch(e){}
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(i, false); });
+    t.addEventListener('keydown', function(e){
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      select((i + d + tabs.length) % tabs.length, true);
+    });
+  });
+
+  var start = 0;
+  try {
+    var saved = parseInt(localStorage.getItem('latam26-tab'), 10);
+    if (!isNaN(saved) && saved >= 0 && saved < tabs.length) start = saved;
+  } catch(e){}
+  select(start, false);
+
+  var btn = document.getElementById('refbtn');
+  var guia = document.getElementById('guia');
+  function setRefs(on){
+    document.body.classList.toggle('refs', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    guia.hidden = !on;
+    try { localStorage.setItem('latam26-refs', on ? '1' : '0'); } catch(e){}
+  }
+  btn.addEventListener('click', function(){
+    setRefs(btn.getAttribute('aria-pressed') !== 'true');
+  });
+  var r = '0';
+  try { r = localStorage.getItem('latam26-refs') || '0'; } catch(e){}
+  setRefs(r === '1');
+})();
+</script>
+
+</body>
+</html>
