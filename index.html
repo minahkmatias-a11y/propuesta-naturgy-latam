@@ -1,17 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">
-<style>
-:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-body{margin:0}
-img{max-width:100%}
-[hidden]{display:none!important}
-.refbtn{display:none!important}
-</style>
-<title>Video Apertura LATAM 2026</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}.refbtn{display:none!important}</style><title>Video Apertura LATAM 2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,800&display=swap">
 <style>
   :root{
@@ -424,6 +414,12 @@ img{max-width:100%}
   .cv text.pk{fill:var(--naranja);font-weight:500}
   .cv text.t{fill:var(--ours-ink-3);font-size:12px}
 
+  .morebtn{
+    appearance:none;cursor:pointer;margin-top:16px;
+    background:transparent;border:1px solid var(--ours-line);color:var(--celeste);
+    border-radius:20px;padding:6px 16px;font-family:var(--f);font-size:14px;
+  }
+  .morebtn:hover{border-color:var(--celeste)}
   .letra{border-left:3px solid var(--naranja);padding:4px 0 4px 22px;display:flex;flex-direction:column;gap:18px;margin-top:16px}
   .ours .letra p{font-size:clamp(17px,2.3vw,19.5px);font-weight:300;line-height:1.6;color:#fff;margin:0;max-width:56ch}
 
@@ -446,6 +442,12 @@ img{max-width:100%}
   .plus{align-self:center;justify-self:center;color:var(--naranja);font-weight:800;font-size:26px;line-height:1}
   @media (max-width:640px){.mix{grid-template-columns:1fr}}
 
+  .ours .minuto{color:var(--ours-ink-3);font-size:13.5px;margin-top:8px}
+  .ours .voz h3 a{color:inherit;text-decoration:none}
+  .ours .voz h3 a:hover{color:var(--celeste)}
+  .ours .todo h3{color:var(--ours-ink-2)}
+  .ours .todo p{color:var(--ours-ink-3)}
+  .ours .todo{border-color:var(--ours-line)}
   .voz{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;align-items:center}
   .voz .play{width:52px;height:52px;margin:-26px 0 0 -26px}
   .voz .play::after{left:20px;top:15px;border-left-width:16px;border-top-width:11px;border-bottom-width:11px}
@@ -487,7 +489,7 @@ img{max-width:100%}
   <div class="top-in">
     <div class="brandline">
       <span class="mark" data-ref="H1">MANDA<span>.</span></span>
-      <span class="breadcrumb" data-ref="H2">Naturgy · Encuentro LATAM 2026 · Propuesta v0.8</span>
+      <span class="breadcrumb" data-ref="H2">Naturgy · Encuentro LATAM 2026 · Propuesta v1.0</span>
       <button class="refbtn" id="refbtn" aria-pressed="false">Modo revisión</button>
     </div>
     <nav class="tabs" role="tablist" aria-label="Secciones de la propuesta" data-ref="H3">
@@ -497,7 +499,7 @@ img{max-width:100%}
       <button class="tab" role="tab" id="t-guion" aria-controls="p-guion" aria-selected="false" hidden>Guión <span class="wip"></span></button>
       <button class="tab" role="tab" id="t-ref" aria-controls="p-ref" aria-selected="false"><span class="own"></span>Referencias</button>
       <button class="tab" role="tab" id="t-crono" aria-controls="p-crono" aria-selected="false">Cronograma</button>
-      <button class="tab" role="tab" id="t-pres2" aria-controls="p-budget" aria-selected="false">Presupuesto</button>
+      <button class="tab" role="tab" id="t-pres2" aria-controls="p-budget" aria-selected="false" hidden>Presupuesto</button>
       <button class="tab" role="tab" id="t-est" aria-controls="p-est" aria-selected="false" hidden>Estética <span class="wip"></span></button>
     </nav>
   </div>
@@ -529,18 +531,52 @@ img{max-width:100%}
     </dl>
   </div>
 
-  <div class="grid2" data-ref="P6">
-    <div>
-      <h3>El encuentro no crea la energía: la reúne</h3>
-      <p class="sub">Una energía que recorre Latinoamérica todos los días, sostenida por personas y por una infraestructura de escala extraordinaria. En 2026 converge en Argentina.</p>
-    </div>
+  <div class="statement" data-ref="P6">
+    <p class="eyebrow" style="color:var(--celeste)">Objetivo</p>
+    <p class="big">Que el encuentro no se lea como una reunión anual, sino como <em>el punto donde converge</em>.</p>
+  </div>
+
+  <div data-ref="P7">
+    <h2>Una energía que no se detiene</h2>
+    <svg class="ruta" viewBox="0 0 700 150" role="img" aria-label="El encuentro rota cada año por un país distinto de Latinoamérica. En 2026 llega a Argentina.">
+      <path class="edge" d="M 40 78 H 655"/>
+      <path class="fill" d="M 40 78 H 655"/>
+      <path class="dash" d="M 52 78 H 643"/>
+      <g>
+        <circle class="node" cx="105" cy="78" r="7"/>
+        <text class="yr" x="105" y="52" text-anchor="middle">2023</text>
+        <circle class="node" cx="212" cy="78" r="7"/>
+        <text class="yr" x="212" y="52" text-anchor="middle">2024</text>
+        <circle class="node" cx="319" cy="78" r="7"/>
+        <text class="yr" x="319" y="52" text-anchor="middle">2025</text>
+        <circle class="now" cx="430" cy="78" r="13"/>
+        <text class="yr on" x="430" y="48" text-anchor="middle">2026</text>
+        <text class="here" x="430" y="112" text-anchor="middle">Argentina</text>
+        <circle class="node" cx="545" cy="78" r="7"/>
+        <text class="yr" x="545" y="52" text-anchor="middle">2027</text>
+      </g>
+      <text class="cap" x="350" y="141" text-anchor="middle">cada año fluye a un país distinto · este año fluye acá</text>
+    </svg>
+  </div>
+
+  <div class="grid2" data-ref="P8">
     <div>
       <h3>Argentina recibe, no exhibe</h3>
       <p class="sub">El anfitrión comparte una experiencia que queda disponible para el resto de la región.</p>
     </div>
   </div>
 
-  <div class="block" data-ref="P7">
+  <div data-ref="P9">
+    <h2>Objetivos</h2>
+    <ul class="clean">
+      <li>Dar dimensión concreta a la escala de la infraestructura.</li>
+      <li>Poner en valor a las personas que la operan: nombre, cara y territorio.</li>
+      <li>Posicionar a Argentina como anfitrión que comparte una experiencia.</li>
+      <li>Conectar con el propósito y el claim sin enunciarlos.</li>
+    </ul>
+  </div>
+
+  <div class="block" data-ref="P10">
     <h2>Qué no es esta pieza</h2>
     <ul class="clean no">
       <li>No es un video de resultados ni una memoria anual.</li>
@@ -549,7 +585,7 @@ img{max-width:100%}
     </ul>
   </div>
 
-  <p class="credit" data-ref="P8">Propuesta de <strong>MANDA</strong></p>
+  <p class="credit" data-ref="P11">Propuesta de <strong>MANDA</strong></p>
 
 </section>
 
@@ -627,16 +663,32 @@ img{max-width:100%}
     </div>
 
     <div data-ref="PR2">
-      <p>Alejandro Dolina, escritor, músico y conductor, dice que <a class="soft" href="https://www.youtube.com/watch?v=-gmJB9ONBKc&amp;t=660s" target="_blank" rel="noopener" title="Ver la entrevista, minuto 11">“Argentina suena a <strong><em>tango</em></strong> y literatura gauchesca”</a>.</p>
-      <p>No importa si está en 2/4 o en 4/4: cuando suena un tango, lo sabemos. Por el bandoneón o por la nostalgia de la letra, pero lo sabemos.</p>
-      <p>Eso buscamos. Que el video suene a tango sin que el texto sea un poema en verso.</p>
-      <p class="pull">No vamos a mostrar tango. <em>Vamos a contar como un tango.</em></p>
-      <p>Con lo mejor que tiene, que es evocar la historia vivida.</p>
+      <p>En el programa español Late Motiv le preguntan a Alejandro Dolina si hay algo que distinga a un argentino de un español. Contesta que son muy pocas cosas y que no se ven a simple vista, pero que para él “Argentina suena a <strong><em>tango</em></strong> y literatura gauchesca”.</p>
+      <p>Ninguna cultura nace sin la mezcla que le dio origen. Una misma sucesión de acordes puede terminar en una zamba, una cueca, un son jarocho o un tango.</p>
+      <p class="pull">No se trata de cantar un tango. <em>Se trata de contar como un tango.</em></p>
+      <p>Con imágenes de archivo y notas arrabaleras no buscamos al oyente nostálgico de una orquesta típica, sino lo mejor de nuestra cultura mestiza: la evocación de la historia vivida. El texto tiene que sonar a tango.</p>
     </div>
   </div>
 
   <div class="sec" data-ref="PR3">
-    <h2>De dónde partimos, adónde vamos</h2>
+    <h2>Un adelanto del texto/guion</h2>
+    <p>La línea por la que iría el guion.</p>
+    <div class="letra">
+      <p>Cuando recibimos una visita queremos que se sienta como en su casa, celebraríamos el aniversario de un invitado como si fuera el propio y somos especialistas en hacer lo mejor que podemos con los recursos que tenemos.</p>
+      <div id="letra-more" hidden>
+      <p>Esta última es una particularidad reconocible desde cualquier país de Latinoamérica.</p>
+      <p>Esa es la energía que hoy converge en Argentina, donde en el arrabal profundo hay un tanque que reserva 45 millones de litros de invierno y en un paso fronterizo la estación reductora de gas más alta del mundo descansa en cimientos construidos a más de 4.000 metros sobre el nivel del mar. Mientras, en alguna región de buen vino, la red eléctrica de mayor complejidad recupera la energía de la cordillera y la distribuye por todo el territorio.</p>
+      <p>Naturgy está involucrada en todos esos procesos de la ciencia y la técnica humana. Imaginados con el ingenio de la cabeza y ejecutados con la habilidad de las manos.</p>
+      <p>Somos los artífices de nuestra propia identidad. Una identidad que se hace todos los días, con la diversidad de geografías, culturas y desafíos reunidos en una sola.</p>
+      </div>
+    </div>
+    <button class="morebtn" id="letra-btn" aria-expanded="false" aria-controls="letra-more">Ver el texto completo</button>
+  </div>
+
+  <div class="sec" data-ref="PR4">
+    <h2>Ser anfitrión</h2>
+    <p>Ser anfitrión es encontrar lo que tenemos en común con los que llegan. Y compartir lo que sabemos sobre la energía que el mundo consume.</p>
+    <div style="margin-top:18px">
     <div class="arc">
       <div class="card">
         <span class="lbl">Partimos</span>
@@ -650,10 +702,11 @@ img{max-width:100%}
         <span class="s">Una sola empresa hecha de tres</span>
         <div class="trio"><span>Naturgy NOA</span><span>Naturgy San Juan</span><span>Naturgy BAN</span></div>
       </div>
+      </div>
     </div>
   </div>
 
-  <div class="sec" data-ref="PR4">
+  <div class="sec" data-ref="PR6">
     <h2>Con qué</h2>
     <p>La base es el registro que hicimos estos últimos cuatro años: los paisajes de cada región, su vida cotidiana y, sobre todo, los equipos de trabajo. Lo humano.</p>
 
@@ -705,7 +758,7 @@ img{max-width:100%}
     </div>
   </div>
 
-  <div class="sec" data-ref="PR5">
+  <div class="sec" data-ref="PR7">
     <div class="trip">
       <div>
         <h3>El texto</h3>
@@ -723,9 +776,9 @@ img{max-width:100%}
     </div>
   </div>
 
-  <div class="sec" data-ref="PR6">
+  <div class="sec" data-ref="PR8">
     <h2>Cómo termina</h2>
-    <p>Con una bienvenida a los que vinieron de lejos. Queremos compartir nuestra historia y escuchar las suyas.</p>
+    <p>Con una bienvenida a los que vinieron de lejos, a un lugar donde pasaron muchas cosas a lo largo de muchos años. Queremos compartir nuestra historia y vamos a recibir las suyas con gusto.</p>
     <svg class="cv" viewBox="0 0 700 190" role="img" aria-label="Curva de intensidad: el video crece, llega a su punto más alto antes del final, baja a la bienvenida y queda en suspenso hasta la placa.">
       <line class="axis" x1="30" y1="160" x2="670" y2="160"/>
       <path class="curve" d="M30,150 C220,148 430,40 500,40 C560,40 570,70 600,72"/>
@@ -738,22 +791,7 @@ img{max-width:100%}
       <text class="t" x="30" y="182">0:00</text>
       <text class="t" x="670" y="182" text-anchor="end">3:00</text>
     </svg>
-    <p>El video va en crescendo, pero el punto más alto no es el final. La última línea deja puntos suspensivos: el video termina y el encuentro empieza. Después, la placa con el claim.</p>
-  </div>
-
-  <div class="sec" data-ref="PR7">
-    <h2>Un adelanto del texto</h2>
-    <p>La línea por la que iría el guion.</p>
-    <div class="letra">
-      <p>Cuando recibimos una visita, queremos que se sienta como en su casa. Festejaríamos el cumpleaños de alguno de ustedes como si fuera el del familiar más querido. Y somos especialistas en hacer lo mejor que podemos con los recursos y la energía que tenemos a mano.</p>
-      <p>Eso se reconoce desde cualquier país de Latinoamérica.</p>
-      <p>Esa energía hoy converge en Argentina.<br>
-        Donde en el arrabal profundo hay un tanque que guarda 45 millones de litros de invierno.<br>
-        Donde en un paso fronterizo, la estación reductora de gas más alta del mundo descansa sobre cimientos a más de 4.000 metros de altura.<br>
-        Y donde, en alguna región de buen vino, la energía de la cordillera se vuelve electricidad para todo el territorio.</p>
-      <p>Estamos en cada uno de esos procesos de la ciencia y la técnica humana. Imaginados con el ingenio de la cabeza y ejecutados con la habilidad de las manos.</p>
-      <p>Somos los artífices de nuestra propia identidad. Una identidad que se hace todos los días, con geografías, culturas y desafíos distintos, reunidos en una sola.</p>
-    </div>
+    <p>El video va en crescendo, pero el punto más alto no es el final. La última estrofa queda en suspenso: puntos suspensivos para lo que sigue ese mismo día. Después, la placa con el claim.</p>
   </div>
 
 </section>
@@ -801,17 +839,43 @@ img{max-width:100%}
   </div>
 
   <div class="sec" data-ref="R2">
-    <h2>Tono e identidad</h2>
+    <h2>Referencia conceptual</h2>
+
+    <div class="voz">
+      <a class="vid" href="https://www.youtube.com/watch?v=-gmJB9ONBKc&amp;t=683s" target="_blank" rel="noopener" aria-label="Ver la entrevista a Dolina en Late Motiv">
+        <img src="ref-dolina.webp" alt="Alejandro Dolina en el programa Late Motiv.">
+        <span class="play" aria-hidden="true"></span>
+      </a>
+      <div>
+        <h3><a href="https://www.youtube.com/watch?v=-gmJB9ONBKc&amp;t=683s" target="_blank" rel="noopener">Dolina en Late Motiv</a></h3>
+        <p>Le preguntan si existe un rasgo que distinga a un argentino de un español. Contesta que son muy poquitos y que no se adivinan a golpe de vista, pero que a él le gusta buscar esas distinciones en los artistas de cada país. Ahí responde que algunos condimentos argentinos pueden ser el tango y la literatura gauchesca.</p>
+        <p class="minuto">Minuto 11 aprox.</p>
+      </div>
+    </div>
+
+    <div class="voz" style="margin-top:22px">
+      <a class="vid" href="https://www.youtube.com/watch?v=EZNAne1tpoQ&amp;t=69s" target="_blank" rel="noopener" aria-label="Ver la charla TED de Jorge Drexler">
+        <img src="ref-drexler.webp" alt="Jorge Drexler en el escenario de TED.">
+        <span class="play" aria-hidden="true"></span>
+      </a>
+      <div>
+        <h3><a href="https://www.youtube.com/watch?v=EZNAne1tpoQ&amp;t=69s" target="_blank" rel="noopener">Drexler en TED</a></h3>
+        <p>Desarma el patrón rítmico 3-3-2 de una milonga uruguaya y muestra el camino que recorrió hasta llegar ahí. Es la prueba sonora de la mezcla: la misma sucesión de acordes puede terminar en una zamba, una cueca, un son jarocho o un tango.</p>
+        <p class="minuto">Minuto 1 aprox.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" data-ref="R3">
+    <h2>Referencia narrativa</h2>
     <a class="vid" href="https://drive.google.com/file/d/1S4bUxrNvb8usZvx2JSAUXNueQ20QOkFP/view?usp=sharing" target="_blank" rel="noopener" aria-label="Ver el video de fin de año 2025 de Naturgy">
       <img src="ref-centro.webp" alt="Cuadro del video de fin de año 2025: la palabra Centro en collage con imágenes de la ciudad, un bandoneonista, un carpincho y una taza de café.">
       <span class="play" aria-hidden="true"></span>
     </a>
     <h3 class="vid-t">Video de fin de año 2025 · Naturgy</h3>
     <p>Referencia de tono, identidad, animaciones y música original.</p>
-  </div>
 
-  <div class="sec" data-ref="R3">
-    <h2>Estructura</h2>
+    <h3 style="margin-top:30px">Estructura</h3>
     <p>Un mix de tres videos que ya conocen.</p>
     <div class="mix">
       <div class="mcard">
@@ -835,7 +899,7 @@ img{max-width:100%}
   </div>
 
   <div class="sec" data-ref="R4">
-    <h2>Locución</h2>
+    <h2>Referencia de locución</h2>
     <div class="voz">
       <a class="vid" href="https://www.youtube.com/watch?v=cOVNiNNwhC4" target="_blank" rel="noopener" aria-label="Escuchar a Fátima Soares en un comercial">
         <img src="ref-voz.webp" alt="Cuadro de un comercial con la voz de Fátima Soares.">
@@ -844,8 +908,13 @@ img{max-width:100%}
       <div>
         <h3>Fátima Soares</h3>
         <p>Locutora de publicidad. Es nuestra sugerencia.</p>
-        <p>Si no convence, buscamos otras opciones en este estilo. También masculinas.</p>
+        <p>Si no convence, buscamos otras opciones en este estilo.</p>
       </div>
+    </div>
+
+    <div class="todo" style="margin-top:22px">
+      <h3>Opción masculina</h3>
+      <p>A cargar, para comparar las dos voces.</p>
     </div>
   </div>
 
@@ -856,7 +925,7 @@ img{max-width:100%}
   <div data-ref="C1">
     <p class="eyebrow">Producción</p>
     <h1>Cronograma</h1>
-    <p class="lede" style="margin-top:12px">Dos fechas fijas: primer corte el 7, corte final el 12. El resto se calcula hacia atrás.</p>
+    <p class="lede" style="margin-top:12px">Tres entregas: maqueta el 2, primer corte el 7 y corte final el 12.</p>
   </div>
 
   <div data-ref="C2">
@@ -891,6 +960,22 @@ img{max-width:100%}
         <p>Selección de planos con fecha y provincia. Cierre de guión y locución.</p>
       </div>
     </div>
+    <div class="row key">
+      <div class="date">Vie 2/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Maqueta de estructura</h3>
+        <p>Un armado con material ya editado, para revisar juntos el orden de los bloques y el arco del relato. Todavía sin locución definitiva, música ni color.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="date">Lun 6/10</div>
+      <div class="rail"><span class="dot"></span></div>
+      <div class="body">
+        <h3>Devolución de la maqueta</h3>
+        <p>Con los comentarios ese mismo día, el primer corte llega el 7.</p>
+      </div>
+    </div>
     <div class="row">
       <div class="date">A definir</div>
       <div class="rail"><span class="dot"></span></div>
@@ -904,7 +989,7 @@ img{max-width:100%}
       <div class="rail"><span class="dot"></span></div>
       <div class="body">
         <h3>Primer corte</h3>
-        <p>Entrega para revisión.</p>
+        <p>Con la voz en off original, un borrador de la música y ejemplos de animaciones.</p>
       </div>
     </div>
     <div class="row">
@@ -919,8 +1004,8 @@ img{max-width:100%}
       <div class="date">9 – 11/10</div>
       <div class="rail"><span class="dot"></span></div>
       <div class="body">
-        <h3>Ajustes, color, mezcla y música</h3>
-        <p>Corrección de color unificada y mezcla final.</p>
+        <h3>Ajustes, montaje, animaciones, color, mezcla y música</h3>
+        <p>Cierre del montaje y de las animaciones, corrección de color unificada y mezcla final.</p>
       </div>
     </div>
     <div class="row key">
@@ -1082,7 +1167,7 @@ img{max-width:100%}
 
 </main>
 
-<footer>MANDA · Propuesta en construcción · v0.8</footer>
+<footer>MANDA · Propuesta en construcción · v1.0</footer>
 
 <script>
 (function(){
@@ -1117,6 +1202,17 @@ img{max-width:100%}
     if (!isNaN(saved) && saved >= 0 && saved < tabs.length) start = saved;
   } catch(e){}
   select(start, false);
+
+  var more = document.getElementById('letra-more');
+  var moreBtn = document.getElementById('letra-btn');
+  if (more && moreBtn) {
+    moreBtn.addEventListener('click', function(){
+      var wasOpen = !more.hidden;
+      more.hidden = wasOpen;
+      moreBtn.textContent = wasOpen ? 'Ver el texto completo' : 'Ver menos';
+      moreBtn.setAttribute('aria-expanded', wasOpen ? 'false' : 'true');
+    });
+  }
 
   var btn = document.getElementById('refbtn');
   var guia = document.getElementById('guia');
